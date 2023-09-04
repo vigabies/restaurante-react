@@ -18,8 +18,8 @@ export default function Cardapio() {
         </div>
       </header>
 
-      <section>
-        <h3>Cardápio</h3>
+      <section className={Styles.cardapio}>
+        <h3 className={Styles.cardapio__titulo}>Cardápio</h3>
         <Filter busca={busca} setBusca={setBusca}/>
       </section>
     </main>
