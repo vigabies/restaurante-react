@@ -1,4 +1,4 @@
-import Styles from "./filter.module.scss";
+import styles from "./Filter.module.scss";
 import {CgSearch} from "react-icons/cg";
 
 //esse filter refere-se ao Buscador do professor!
@@ -10,7 +10,7 @@ interface Props {
 
 export default function Filter({busca, setBusca}: Props) {
   return (
-    <div className={Styles.buscador}>
+    <div className={styles.buscador}>
       <input value={busca}
       onChange={(evento) => setBusca(evento.target.value)}
       />

@@ -1,6 +1,6 @@
 import Styles from "./Cardapio.module.scss";
 import logo from "assets/logo.svg";
-import Filter from "./filter";
+import Filter from "./Filter";
 import { useState } from "react";
 import Filtros from "./Filtros";
 

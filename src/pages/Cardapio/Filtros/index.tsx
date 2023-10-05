@@ -1,4 +1,4 @@
-import Styles from "./filter.module.scss";
+import styles from "./Filtros.module.scss";
 import filtros from "./filtros.json";
 
 // uma opção de puxar ele é essa
@@ -19,9 +19,14 @@ export default function Filtros({ filtro, setFiltro }: Props) {
     return setFiltro(opcao.id);
   }
   return (
-    <div>
+    <div className={styles.filtro}>
       {filtros.map((opcao) => (
-        <button key={opcao.id} onClick={() => selecionarFiltro(opcao)}>
+        <button className={`
+         ${styles.filtro__filtro}
+         ${filtro === opcao.id ? styles["filtro__filtro--ativo"]: ""}
+        `}
+         key={opcao.id} 
+         onClick={() => selecionarFiltro(opcao)}>
           {opcao.label}
         </button>
       ))}
